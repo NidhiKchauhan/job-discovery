@@ -13,26 +13,26 @@ ACTORS = [
             "location": "Canada",
             "maxResults": 50
         }
-    },
-    {
-        "name": "linkedin_2",
-        "id": "zn01OAlzP853oqn4Z",
-        "input": {
-            "mode": "jobs",
-            "searchQuery": "Salesforce Administrator",
-            "location": "Canada",
-            "maxResults": 50
-        }
-    },
-    {
-        "name": "indeed",
-        "id": "MXLpngmVpE8WTESQr",
-        "input": {
-            "query": "Salesforce Developer",
-            "location": "Canada",
-            "maxResults": 50
-        }
     }
+    # {
+    #     "name": "linkedin_2",
+    #     "id": "zn01OAlzP853oqn4Z",
+    #     "input": {
+    #         "mode": "jobs",
+    #         "searchQuery": "Salesforce Administrator",
+    #         "location": "Canada",
+    #         "maxResults": 50
+    #     }
+    # },
+    # {
+    #     "name": "indeed",
+    #     "id": "MXLpngmVpE8WTESQr",
+    #     "input": {
+    #         "query": "Salesforce Developer",
+    #         "location": "Canada",
+    #         "maxResults": 50
+    #     }
+    # }
 ]
 
 def run_actor(actor_id, payload):
