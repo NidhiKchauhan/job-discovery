@@ -1,12 +1,12 @@
-name: Daily Salesforce Jobs
+name: Job Discovery Pipeline
 
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: "0 22 * * *"   # 6 PM EST approx
   workflow_dispatch:
 
 jobs:
-  scrape:
+  run:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,8 +14,15 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - run: pip install -r requirements.txt
+      - run: pip install requests pandas
+
+      - run: mkdir -p output
 
       - run: python scripts/run.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jobs-output
+          path: output/
