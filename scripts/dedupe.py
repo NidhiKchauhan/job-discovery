@@ -8,8 +8,9 @@ unique_jobs = []
 
 for job in jobs:
     key = (
-        job["company"].strip().lower(),
-        job["title"].strip().lower()
+        (job.get("company") or "").strip().lower(),
+        (job.get("title") or "").strip().lower(),
+        (job.get("url") or "").strip().lower(),
     )
 
     if key not in seen:

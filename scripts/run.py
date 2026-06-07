@@ -1,5 +1,6 @@
 import subprocess
+import sys
 
-subprocess.run(["python", "scripts/fetch_apify.py"])
-subprocess.run(["python", "scripts/dedupe.py"])
-subprocess.run(["python", "scripts/export.py"])
+subprocess.run([sys.executable, "scripts/fetch_apify.py"], check=True)
+subprocess.run([sys.executable, "scripts/dedupe.py"], check=True)
+subprocess.run([sys.executable, "scripts/export.py"], check=True)
