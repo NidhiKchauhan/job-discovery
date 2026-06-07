@@ -21,15 +21,12 @@ DEFAULT_JOB_QUERIES = [
 
 DEFAULT_JOB_LOCATIONS = [
     "Canada",
-    "United States",
-    "Remote Canada",
-    "Remote US",
     "Toronto",
     "Ottawa",
     "Montreal",
 ]
 
-DEFAULT_JOB_SITES = ["indeed", "linkedin", "glassdoor"]
+DEFAULT_JOB_SITES = ["indeed"]
 
 
 def env_list(name, default):
