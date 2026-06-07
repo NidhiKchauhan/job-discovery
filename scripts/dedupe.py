@@ -10,7 +10,7 @@ for job in jobs:
     key = (
         (job.get("company") or "").strip().lower(),
         (job.get("title") or "").strip().lower(),
-        (job.get("url") or "").strip().lower(),
+        (job.get("location") or "").strip().lower(),
     )
 
     if key not in seen:

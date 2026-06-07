@@ -8,8 +8,6 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-    env:
-      APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
 
     steps:
       - uses: actions/checkout@v6
