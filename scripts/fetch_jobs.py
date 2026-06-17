@@ -17,13 +17,14 @@ DEFAULT_JOB_QUERIES = [
     "Salesforce CPQ",
     "Salesforce AI Developer",
     "Salesforce System",
+    "Salesforce Analyst"
 ]
 
 DEFAULT_JOB_LOCATIONS = [
     "Canada",
     "Toronto",
     "Ottawa",
-    "Montreal",
+    "Remote",
 ]
 
 DEFAULT_JOB_SITES = ["indeed"]
@@ -39,11 +40,6 @@ def env_list(name, default):
 
 def country_for_location(location):
     countries_by_location = {
-        "united states": "USA",
-        "us": "USA",
-        "usa": "USA",
-        "remote us": "USA",
-        "remote usa": "USA",
         "canada": "Canada",
         "remote": "Canada",
         "remote canada": "Canada",
